@@ -1,0 +1,12 @@
+.sideBySide-question-card{
+    /* text-align: center;  */
+  width: 66.67%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.upAndDown-question-card{
+    /* text-align: center;  */
+  width: 66.67%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}

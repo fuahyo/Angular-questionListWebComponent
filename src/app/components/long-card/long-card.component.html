@@ -1,0 +1,14 @@
+<div class="question-long-card" *ngFor="let questionTitle of questionTitleArray; trackBy: trackQuestionTitle">
+    <div class="question-details-long-card">
+      <div class="question-title">{{ questionTitle }}</div>
+      <div class="score">274 points by oblio</div>
+      <div class="creator">codeberg.org </div>
+      <div class="time-long-card">🕔 4 hours ago</div>
+    </div>
+    <div class="comments-box">
+      <div class="comments-icon">🗨️</div>
+      <!-- <div class="comments-icon">🗨</div> -->
+      <div class="comments-count">95 comments</div>
+      <div class="right-arrow">➔</div>
+    </div>
+</div>

@@ -1,0 +1,107 @@
+.question-half-card {
+    width: 49.2%; /* Adjusted to leave some space between the cards */
+    display: inline-block;
+    margin: 0 0.4%; /* Adjusted margin for spacing between cards */
+    height: 0 auto;
+    background-color: #fff;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+
+  }
+
+  .question-details-half-card::after {
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: #ddd;
+      margin-top: 10px; /* Adjust the margin as needed */
+    }
+
+  .bottom-question-half-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: auto;
+    background-color: #fff;
+    padding: 0 0 10px 10px; /* top, right, bottom, left */
+  }
+
+  .question-half-card:hover {
+    border-color: orangered;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); 
+  }
+
+  .question-details-half-card  {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .question-title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2; /* Adjust the number of lines as needed */
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+    align-items: flex-start; /* Align to the end of the flex container */
+    height: 38px;
+    display: flex;
+    font-size: 16px;
+  }
+
+  .score, .creator, .time-half-card, .comments {
+    color: grey;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .score {
+    font-weight: normal;
+    margin-right: 10px;
+  }
+
+  .score , .creator{
+    display: inline-block;
+  }
+
+
+  .time-half-card::before{
+    margin: 0 5px;
+    
+  }
+
+  .creator::before {
+    content: "|  ";
+    margin: 0 5px;
+    
+  }
+
+  .comments-button {
+    background-color: rgb(254, 233, 195); /* Banana bg-color */
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border-color: rgb(254, 233, 195);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  */
+  }
+
+
+  .comments-icon {
+    margin-right: 5px;
+  }
+
+
+  .comments-icon, .right-arrow, .comments-count {
+    font-weight: bold;
+    color: orangered;
+    font-size: 12px;
+  }

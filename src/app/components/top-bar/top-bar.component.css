@@ -1,0 +1,28 @@
+.top-bar {
+    position: fixed; /* This line will fix the top bar position */
+    top: 0; /* This line will position the top bar at the top of the page */
+    left: 0; /* This line will position the top bar at the left side of the page */
+    width: 100%; /* This line will make the top bar span the entire width of the page */
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+ }
+
+  .logo-box {
+    width: 30px;
+    height: 30px;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  .logo {
+    color: #000;
+    font-weight: bold;
+  }

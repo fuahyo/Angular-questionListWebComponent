@@ -1,0 +1,46 @@
+
+.question-title {
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  .question-topper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .score , .creator, .time{
+    display: inline-block;
+  }
+
+  .creator::before, .time::before {
+    content: "   | ";
+    margin: 0 5px;
+    
+  }
+
+  .question-details-group, .comment-group{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin-right: 10px;
+  }
+  
+  .comment-card {
+      margin: 0;
+      background-color: #fde4e4;
+      border-radius: 5px;
+    }
+  .comment-title {
+    font-size: 12px;
+    font-weight: bold;
+    }
+  .comment-description {
+    font-size: 8px;
+    }
+    /* ------------- */
+
+    

@@ -1,0 +1,16 @@
+
+<div class="question-half-card" *ngFor="let questionTitle of questionTitleArray; let i = index; trackBy: trackQuestionTitle">
+    <div class="question-details-half-card">
+        <div class="question-title">{{ questionTitle }}</div>
+        <div class="score">274 points by oblio</div>
+        <div class="creator">codeberg.org</div>
+    </div>
+    <div class="bottom-question-half-card">
+        <div class="time-half-card">🕔 4 hours ago </div>
+        <button  class="comments-button" (click)="openModal()">
+                <div class="comments-icon">🗨️</div>
+                <div class="comments-count">95 comments</div>
+                <div class="right-arrow">➔</div>
+        </button>
+    </div>
+</div>
