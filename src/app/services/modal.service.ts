@@ -1,22 +1,23 @@
-// modal.service.ts
-
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
+
+declare var bootstrap: any;
 
 @Injectable({
   providedIn: 'root'
 })
 export class ModalService {
-  private showModalSubject: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
-  public showModal$: Observable<boolean> = this.showModalSubject.asObservable();
+  private commentModal: any;  // Add a reference to the modal
 
   constructor() {}
 
-  openModal() {
-    this.showModalSubject.next(true);
+  openCommentModal() {
+    this.commentModal = new bootstrap.Modal(document.getElementById('commentModal'));
+    this.commentModal.show();
   }
 
-  closeModal() {
-    this.showModalSubject.next(false);
+  closeCommentModal() {
+    if (this.commentModal) {
+      this.commentModal.hide();
+    }
   }
 }

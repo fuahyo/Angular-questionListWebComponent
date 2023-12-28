@@ -7,10 +7,49 @@
     </div>
     <div class="bottom-question-half-card">
         <div class="time-half-card">🕔 4 hours ago </div>
-        <button  class="comments-button" (click)="openModal()">
-                <div class="comments-icon">🗨️</div>
-                <div class="comments-count">95 comments</div>
-                <div class="right-arrow">➔</div>
+        <button class="comments-button btn" type="button" data-bs-toggle="modal" data-bs-target="#commentModal">
+            <div class="comments-icon">🗨️</div>
+            <div class="comments-count">95 comments</div>
+            <div class="right-arrow">➔</div>
         </button>
     </div>
+      
 </div>
+
+<!-- Modal -->
+    <div class="modal " id="commentModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+            <div class="modal-content" style="padding-left: 30px; padding-right: 30px;">
+                <div class="modal-header" style="padding: 0;">
+                    <div style="width: 100%;">
+                        <div class="header-half-card-modal">
+                            <div class="question-title-modal">Codeberg - Fast Open Source Alternative to Github</div>                     
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"  style="position: absolute;
+                            top: 0;
+                            right: 0; margin-right: 2px; margin-top: 2px;"></button>
+                        </div>  
+                        <div class="question-topper-modal">
+                            <div class="question-details-group-modal">
+                                <div class="score-modal">274 points by oblio</div>
+                                <div class="creator-modal">codeberg.org </div>
+                                <div class="time-modal">🕔 4 hours ago</div>
+                            </div>
+                            <div class="comments-group-modal">
+                                <div class="comments-icon-modal">🗨️ </div>
+                                <div class="comments-count-modal"> 95 comments</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body mb-3" style="padding: 0;margin-top: 10px;">
+                    @for(post of data; track post){
+                        <div class="comment-card-modal">
+                            <div class="comment-title-modal">Commenter Leverl 1</div>
+                            <div class="comment-description-modal">You can can both the right. The title as  it standards describes Codeberg  as a "FastOpen Source Alternative to Github" and I'd agree that it's a confusing to say at least.</div>
+                        </div>
+                        <div class="comment-time-modal"> 3 hours ago </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>

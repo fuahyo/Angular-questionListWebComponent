@@ -7,23 +7,21 @@ import { HalfCardComponent } from './components/half-card/half-card.component';
 import { LongCardComponent } from './components/long-card/long-card.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { ModalCommentComponent } from './components/modal-comment/modal-comment.component';
-import { ModalService } from './services/modal.service';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
     HalfCardComponent,
     LongCardComponent,
-    TopBarComponent,
-    ModalCommentComponent
+    TopBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
-  providers: [ModalService],
   bootstrap: [AppComponent],
 })
 export class AppModule {

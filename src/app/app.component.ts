@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,9 +9,7 @@ export class AppComponent implements OnInit{
   title = 'hacker-news';
 
   constructor(private httpClient: HttpClient) {}
-
   data: any[] = [];
-
   ngOnInit(): void {
     this.fetchData();
   }
